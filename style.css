@@ -1,0 +1,182 @@
+body{
+    margin: 0;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    font-family: sans-serif;
+    overflow-x: hidden;
+}
+.container{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    width: 900px;
+}
+.row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+li,ul, a{
+    display: inline;
+    list-style: none;
+    text-decoration: none;
+    padding: 0;
+    color: black;
+}
+img{
+    height: max-content;
+}
+
+/* Partes especificas */
+
+/* Header */
+header .row{
+    justify-content: space-between;
+}
+
+header .row#main-header-row { 
+    border-bottom: 2px solid #ccc;
+}
+
+header h1{
+    margin-left: 0.2em;
+    color: gray;
+}
+
+.social-icon, .social-icon a{
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 0;
+    margin-right: 0!important;
+    padding-top: 20px;
+}
+.social-icon span{
+    visibility: hidden;
+}
+
+header .row nav{
+    margin-top: 1em;
+}
+header .row nav a{
+    margin-right: 0.6em;
+}
+header .row nav a:hover{
+    color: rgb(0, 197, 0);
+}
+#twitter{
+ background-image: url(./imagens/twitter.png);   
+}
+#twitter:hover{
+    background-image: url(./imagens/twitter_hover.png);   
+   }
+#facebook{
+    background-image: url(./imagens/facebook.png);
+}
+#facebook:hover{
+    background-image: url(./imagens/facebook_hover.png);
+}
+#rss {
+    background-image: url(./imagens/rss.png);
+}
+#rss:hover {
+    background-image: url(./imagens/rss_hover.png);
+}
+#pinterest{
+    background-image: url(./imagens/pinterest.png);
+}
+#pinterest:hover{
+    background-image: url(./imagens/pinterest_hover.png);
+}
+#google{
+    background-image: url(./imagens/google.png);
+}
+#google:hover{
+    background-image: url(./imagens/google_hover.png);
+}
+#dribbble{
+    background-image: url(./imagens/dribbble.png);
+}
+#dribbble:hover{
+    background-image: url(./imagens/dribbble_hover.png);
+}
+
+/*Banner */
+
+banner{
+    margin-top: 1.5em;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    background-image: url(./imagens/bg_banner.png) ; 
+    background-size: 100% 95%;
+    background-repeat: no-repeat;
+    height: 500px ;
+    margin-bottom: 8em;
+}
+
+banner img{
+    padding-top: 5em;
+    width: 866px;
+
+}
+
+/* Main */
+main{
+    min-height: calc(100% - 800px);
+}
+
+main .descricao , .descricao p{
+    text-align: center;
+    margin: auto;
+    display: flex;
+    flex-flow: column ;
+    align-items: center;
+    color: gray;
+    margin-bottom: 2em;
+}
+main .descricao {
+    margin-bottom: 3em;
+}
+
+main button, main button a{
+    background-color: #4CAF50;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: white;
+    padding: 1em;
+    border: 0;
+}
+main .row{
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+main .row div{
+    width: 33%;
+
+}
+main .row div a p{
+    color: rgb(175, 175, 175);
+    margin-bottom: 2em;
+
+}
+main .row img{
+    width: 96%;
+}
+/* Footer */
+
+footer{
+    display: flex;
+    background-color: whitesmoke;
+    width: 100vw;
+    height: 70px;
+    margin-top: 2em;
+    font-size: small;
+}
+footer .container{
+    margin: auto;
+    color: gray;
+    font-size: small;
+}
